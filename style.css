@@ -1,0 +1,749 @@
+@charset 'utf-8';
+
+body,
+h1 {
+  margin: 0;
+  /* background-color: brown; */
+  /* width: 100%; */
+}
+p,
+a {
+  margin: 0;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 1440px;
+  /* width: 100%;s */
+}
+.header {
+  position: relative;
+  margin-top: 25px;
+}
+.logo {
+  position: absolute;
+  left: 25px;
+  height: 63px;
+}
+.main_visual {
+  position: absolute;
+  top: 35px;
+  width: 1440px;
+  z-index: 500;
+  border-radius: 900px 900px 0 0;
+}
+
+/* メインビジュアル挿絵 */
+.sun {
+  position: absolute;
+  right: 25px;
+  width: 138px;
+}
+.leaf {
+  position: absolute;
+  top: 102px;
+  left: -8px;
+  width: 164px;
+  z-index: 700;
+}
+.leaf_2 {
+  position: absolute;
+  top: 450px;
+  right: 0;
+  width: 219px;
+  z-index: 700;
+}
+.blue_note {
+  position: absolute;
+  width: 104px;
+  top: 550px;
+  left: 154px;
+  transform: rotate(12deg);
+  z-index: 700;
+}
+.flower_pink1 {
+  position: absolute;
+  width: 58px;
+  top: 402px;
+  left: 136px;
+  z-index: 700;
+}
+.flower_pink2 {
+  position: absolute;
+  top: 580px;
+  left: 1135px;
+  width: 85px;
+  z-index: 700;
+}
+.exclamation_point {
+  position: absolute;
+  width: 93px;
+  top: 290px;
+  left: 720px;
+  z-index: 700;
+}
+.question_mark {
+  position: absolute;
+  width: 73px;
+  top: 418px;
+  left: 1160px;
+  transform: rotate(-17deg);
+  z-index: 700;
+}
+.light {
+  position: absolute;
+  width: 70px;
+  top: 280px;
+  left: 1100px;
+  transform: rotate(18deg);
+  z-index: 700;
+}
+.heart {
+  position: absolute;
+  width: 86px;
+  top: 433px;
+  left: 793px;
+  transform: rotate(-13deg);
+  z-index: 700;
+}
+.three_line {
+  position: absolute;
+  width: 140px;
+  top: 283px;
+  left: 244px;
+  z-index: 700;
+}
+
+/* キャッチコピー */
+.catchphrase {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: -8px;
+  font-size: 53px;
+  line-height: 89px;
+  font-weight: 600;
+  top: 111px;
+  /* margin: 0; */
+  z-index: 700;
+}
+
+.color_green {
+  color: #28a93d;
+}
+.color_yellow_green {
+  color: #adcd16;
+}
+.color_orange {
+  color: #f0970f;
+}
+.color_pink {
+  color: #e1004f;
+}
+.color_purple {
+  color: #8c4795;
+}
+.color_blue {
+  color: #044198;
+}
+.color_light_blue {
+  color: #1b9ad9;
+}
+
+/* 緑アーチ */
+.green_circle {
+  position: absolute;
+  background-color: #79a628;
+  top: -10px;
+  width: 100%;
+  height: 1440px;
+  z-index: 200;
+  border-radius: 900px 900px 0 0;
+}
+
+/* ナビゲーション */
+/* ナビゲーション　お知らせ */
+.list_circle_1 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: dotted 9px #28a93d;
+  border-radius: 90px;
+  background-color: #fff;
+  top: 309px;
+  left: 15px;
+  z-index: 600;
+  text-align: center;
+}
+.list_circle_1 img {
+  margin: 31px 0px 0px 0px;
+  width: 66px;
+  height: 60px;
+}
+.list_circle_1 p {
+  font-size: 18px;
+  color: #28a93d;
+  font-weight: 600;
+}
+
+/* ナビゲーション　園での生活 */
+.list_circle_2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: dotted 9px #adcd16;
+  border-radius: 90px;
+  background-color: #fff;
+  top: 133px;
+  left: 125px;
+  z-index: 600;
+  text-align: center;
+}
+.list_circle_2 img {
+  margin: 31px 0px 0px 0px;
+  width: 66px;
+  height: 60px;
+}
+.list_circle_2 p {
+  font-size: 18px;
+  color: #28a93d;
+  font-weight: 600;
+}
+
+/* ナビゲーション　園について */
+.list_circle_3 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: dotted 9px #f0970f;
+  border-radius: 90px;
+  background-color: #fff;
+  left: 299px;
+  z-index: 600;
+  text-align: center;
+}
+.list_circle_3 img {
+  margin: 31px 0px 0px 0px;
+  width: 66px;
+  height: 60px;
+}
+.list_circle_3 p {
+  font-size: 18px;
+  color: #28a93d;
+  font-weight: 600;
+}
+
+/* ナビゲーション　入園案内 */
+.list_circle_4 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: dotted 9px #e1004f;
+  border-radius: 90px;
+  background-color: #fff;
+  right: 299px;
+  z-index: 600;
+  text-align: center;
+}
+.list_circle_4 img {
+  margin: 31px 0px 0px 0px;
+  width: 66px;
+  height: 60px;
+}
+.list_circle_4 p {
+  font-size: 18px;
+  color: #28a93d;
+  font-weight: 600;
+}
+
+/* ナビゲーション　園の教育 */
+.list_circle_5 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: dotted 9px #8c4795;
+  border-radius: 90px;
+  background-color: #fff;
+  top: 133px;
+  right: 125px;
+  z-index: 600;
+  text-align: center;
+}
+.list_circle_5 img {
+  margin: 31px 0px 0px 0px;
+  width: 66px;
+  height: 60px;
+}
+.list_circle_5 p {
+  font-size: 18px;
+  color: #28a93d;
+  font-weight: 600;
+}
+
+/* ナビゲーション　資料請求 */
+.list_circle_6 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: dotted 9px #1b9ad9;
+  border-radius: 90px;
+  background-color: #fff;
+  top: 309px;
+  right: 15px;
+  z-index: 600;
+  text-align: center;
+}
+.list_circle_6 img {
+  margin: 31px 0px 0px 0px;
+  width: 66px;
+  height: 60px;
+}
+.list_circle_6 p {
+  font-size: 18px;
+  color: #28a93d;
+  font-weight: 600;
+}
+
+/* 待望の新園舎が完成しました！ */
+.new_wrapper {
+  position: absolute;
+  width: 1440px;
+  height: 670px;
+  background-color: rgb(255, 255, 255);
+  top: 790px;
+  z-index: 600;
+}
+
+/* イラスト */
+.tree {
+  position: absolute;
+  width: 158px;
+  top: 141px;
+  left: 468px;
+}
+.small_bud {
+  position: absolute;
+  width: 142px;
+  top: 321px;
+  left: 804px;
+}
+.regular_bud {
+  position: absolute;
+  width: 236px;
+  top: 230px;
+  left: 993px;
+}
+.pencil_blue {
+  position: absolute;
+  width: 47px;
+  transform: rotate(-31deg);
+  top: 390px;
+  left: 517px;
+}
+.pencil_green {
+  position: absolute;
+  width: 48px;
+  transform: rotate(-72deg);
+  top: 439px;
+  left: 463px;
+}
+.mushroom {
+  position: absolute;
+  width: 124px;
+  top: 347px;
+  left: 621px;
+}
+
+.background_box {
+  width: 693px;
+  height: 412px;
+  background-color: #eaf5fa;
+  margin-top: 315px;
+  margin-left: 38px;
+}
+.image_1 {
+  position: absolute;
+  width: 142px;
+  margin-top: 45px;
+  margin-left: 766px;
+}
+.image_2 {
+  position: absolute;
+  width: 236px;
+  margin-top: -21px;
+  margin-left: 955px;
+}
+.image_3 {
+  position: absolute;
+  width: 728px;
+  height: 416px;
+  margin-top: 186px;
+  margin-left: 562px;
+  margin-bottom: 139px;
+  border-radius: 50px;
+}
+
+.small_text {
+  font-size: 16px;
+  color: #454545;
+  letter-spacing: 0px;
+}
+.vertical {
+  position: absolute;
+  margin: -76px 0 0 161px;
+  font-size: 40px;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  letter-spacing: -5px;
+}
+.symbol {
+  text-combine-upright: all;
+}
+.p_wrapper {
+  font-size: 14px;
+  position: absolute;
+  margin: 254px 0 0 161px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding-bottom: 187px;
+}
+
+/* SI遊び */
+.si_play {
+  position: relative;
+  padding: 239px 0 239px 199px;
+  top: 1792px;
+  background-color: #faf5ea;
+  display: flex;
+}
+.si_play h1 {
+  font-size: 40px;
+  letter-spacing: -6px;
+  margin-right: 84px;
+  margin-bottom: 52px;
+}
+.si_play a {
+  color: #fff;
+}
+.light_blue_link {
+  width: 298px;
+  height: 49px;
+  background-color: #78c4e9;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.line_flower {
+  position: absolute;
+  top: 993px;
+}
+.line_chick {
+  position: absolute;
+  top: 1760px;
+}
+.text {
+  font-size: 19px;
+}
+.text p {
+  margin-bottom: 30px;
+}
+.si_small_text {
+  font-size: 11px;
+  color: #8c4795;
+}
+.si_small_text span {
+  margin-bottom: 3px;
+  font-weight: bold;
+}
+
+.infomation {
+  margin-top: 2047px;
+  background-color: #fafaea;
+  padding-bottom: 90px;
+}
+.blue_link p {
+  color: #fff;
+  font-weight: bold;
+}
+.blue_link {
+  width: 312px;
+  height: 47px;
+  background-color: #3576b3;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.infomation p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8rem;
+}
+
+.rainbow {
+  position: absolute;
+  width: 239px;
+  margin: -125px auto 0 auto;
+  /* top: 50%; */
+  left: 722px;
+  transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+.balloon {
+  position: absolute;
+  width: 136px;
+  transform: rotate(-6deg);
+  margin: -200px 0 0 350px;
+}
+.fish {
+  position: absolute;
+  width: 156px;
+  transform: rotate(-15deg);
+  margin: 75px 0 0 120px;
+}
+.elephant {
+  position: absolute;
+  width: 144px;
+  margin: -65px 0 0 1100px;
+}
+.hert_2 {
+  position: absolute;
+  width: 160px;
+  margin: 250px 0 0 1150px;
+  transform: rotate(10deg);
+}
+.info_top_wrapper {
+  text-align: center;
+}
+.blue_link_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.infomation .info_h1 {
+  width: 800px;
+  position: absolute;
+  left: 720px;
+  transform: translateY(-50%) translateX(-50%);
+  letter-spacing: -4px;
+}
+.infomation p {
+  padding-top: 57px;
+  padding-bottom: 49px;
+}
+.blue_link_wrapper p {
+  padding: 0;
+}
+.blue_link_wrapper a {
+  height: 47px;
+}
+
+.card_wrapper {
+  margin: 90px 142px 0 142px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card {
+  width: 256px;
+  height: 600px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.card h1 {
+  font-size: 18px;
+  letter-spacing: -3px;
+}
+.card img {
+  width: 256px;
+  height: 171px;
+  border-radius: 6px 6px 0 0;
+  object-fit: cover;
+}
+.nomal_text {
+  color: #3576b3;
+  font-size: 14px;
+  letter-spacing: normal;
+}
+.small_blue_text {
+  color: #3576b3;
+  font-size: 8px;
+  line-height: 10px;
+  font-weight: 300;
+  margin: 0;
+}
+.pamphlet {
+  line-height: 20px;
+}
+.pamphlet br {
+  height: 8px;
+}
+.hoiku_h1 {
+  margin-top: 20px;
+}
+.h1_wrapper {
+  height: 80px;
+  padding: 18px 0;
+}
+.card p {
+  padding: 0px;
+  text-align: left;
+  padding: 0 33px 72px 33px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.card .light_blue_link {
+  width: 209px;
+  height: 33px;
+  background-color: #78c4e9;
+  border-radius: 3px;
+  margin: 0 auto;
+  /* margin-bottom: 12px; */
+}
+.card .light_blue_link a {
+  width: 209px;
+  height: 33px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .light_blue_link p {
+  color: #ffffff;
+  padding: 0;
+  font-weight: 600;
+}
+
+/* topics *******************/
+
+.topics {
+  padding: 150px 152px 173.5px 152px;
+  /* width: 480px; */
+  margin: 0 auto;
+}
+.topics h1 {
+  letter-spacing: -3px;
+  font-size: 18px;
+  border-bottom: 2px solid #1b9ad9;
+  display: inline-block;
+  margin-left: 24px;
+  height: 22px;
+  margin-bottom: 40.5px;
+}
+.topics_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.topics .light_blue_link {
+  width: 308px;
+  height: 55px;
+  margin-bottom: 12px;
+}
+.topics .light_blue_link a {
+  color: #ffffff;
+}
+.news-list {
+  list-style: none outside;
+  margin: 0;
+  padding: 0;
+  margin-right: 74.5px;
+  width: 750px;
+}
+.news-list .item a {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+  border-bottom: 1px dotted rgb(34, 34, 34);
+  padding: 22.5px 24px;
+}
+.news-list .item:first-child a {
+  border-top: 1px dotted rgb(34, 34, 34);
+}
+.news-list .item .date {
+  margin: 0;
+  min-width: 140px;
+  font-size: 12px;
+  color: rgb(50, 50, 50);
+  padding: 0 37px 0 0;
+}
+.news-list .item .category {
+  margin: 0;
+  min-width: 140px;
+  padding: 0 20px 0 0;
+}
+.news-list .item .category span {
+  background: #999;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 12px;
+  line-height: 1;
+}
+.news-list .item .title {
+  font-size: 14px;
+  margin: 0;
+  width: 100%;
+  color: #3576b3;
+}
+
+@media screen and (max-width: 767px) {
+  .news-list .item a {
+    flex-wrap: wrap;
+  }
+  .news-list .item .date {
+    min-width: 100px;
+  }
+  .news-list .item .title {
+    margin-top: 10px;
+  }
+}
+
+.reaf_illust {
+  position: absolute;
+  width: 1250px;
+  left: 0px;
+  right: 0;
+  top: 2540px;
+  /* padding-bottom: 245px; */
+}
+small p {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 283px;
+  margin-bottom: 82px;
+}
+
+.si_illust {
+  position: relative;
+}
+.train {
+  position: absolute;
+  width: 232px;
+  height: 131px;
+  left: 940px;
+  top: -170px;
+}
+.ball {
+  position: absolute;
+  width: 144px;
+  height: 126px;
+  left: -140px;
+  bottom: -140px;
+}
